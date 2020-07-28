@@ -25,7 +25,7 @@ Put your API key ID as the `params` value in the `auth` action at the beginning
 of the communication as the example below.
 
 ```
-$ wscat wss://socket.polygon.io/stocks
+$ wscat -c wss://socket.polygon.io/stocks
 [{"ev":"status","status":"connected","message":"Connected Successfully"}]
 {"action":"auth","params":"$APCA_API_KEY_ID"}
 [{"ev":"status","status":"success","message":"authenticated"}]
